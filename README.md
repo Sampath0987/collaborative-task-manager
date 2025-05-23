@@ -18,5 +18,5 @@ A modern, intuitive task management app built with Next.js, Shadcn UI, Zustand, 
 
 ### 1. Clone the repo
 
-git clone https://github.com/Sampath0987/collaborative-task-manager.git
-cd collaborative-task-manager
+- git clone https://github.com/Sampath0987/collaborative-task-manager.git
+- cd collaborative-task-manager
