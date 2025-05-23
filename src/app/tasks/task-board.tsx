@@ -25,18 +25,8 @@ export default function TaskBoard({}: // search,
   const statuses: Task["status"][] = ["To Do", "In Progress", "Done"];
 
   return (
-    <div className="grid grid-cols-3 gap-4">
-      {/* {statuses.map((status) => (
-        <div key={status} className="bg-gray-100 p-3 rounded">
-          <h2 className="font-semibold mb-2">{status}</h2>
-          {tasks
-            .filter((task) => task.status === status)
-            .map((task) => (
-              <TaskCard key={task.id} task={task} />
-            ))}
-        </div>
-      ))} */}
-
+    // <div className="grid grid-cols-3 gap-4">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
       {statuses.map((s) => (
         <div key={s} className="bg-gray-100 p-3 rounded">
           <h2 className="font-semibold mb-2">{s}</h2>

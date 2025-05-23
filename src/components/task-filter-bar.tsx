@@ -45,7 +45,8 @@ export default function TaskFilterBar({
   } = useFilterStore();
 
   return (
-    <div className="flex flex-col md:flex-row items-center justify-between mb-6 gap-3">
+    // <div className="flex flex-col md:flex-row items-center justify-between mb-6 gap-3">
+    <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between mb-6">
       {/* Search */}
       <Input
         placeholder="Search tasks..."
@@ -55,7 +56,8 @@ export default function TaskFilterBar({
       />
 
       {/* Filters */}
-      <div className="flex items-center gap-3">
+      {/* <div className="flex items-center gap-3"> */}
+      <div className="flex flex-wrap gap-3 items-center justify-start w-full md:justify-end">
         <Select onValueChange={setStatus} value={status}>
           <SelectTrigger className="w-[150px]">
             <SelectValue placeholder="Filter by Status" />
